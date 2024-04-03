@@ -228,68 +228,68 @@ img {
 }
 
 /* HOME BANNER */
-.homeBanner {
+.homebanner {
 	padding-top: 3rem;
 	padding-bottom: 7rem;
 }
-.homeBanner_wrapper {
+.homebanner_wrapper {
 	display: flex;
 	justify-content: space-between;
 }
-.homeBanner_left {
+.homebanner_left {
 	max-width: 80rem;
 }
-.homeBanner_left ul li {
+.homebanner_left ul li {
 	line-height: 5rem;
 }
-.homeBanner_left ul li:first-child {
+.homebanner_left ul li:first-child {
 	color: var(--clr-primary);
 	font-size: 5rem;
 	font-weight: 700;
 }
-.homeBanner_left ul li:nth-child(2) {
+.homebanner_left ul li:nth-child(2) {
 	color: var(--clr-secondary);
 	font-size: 5rem;
 	font-weight: 700;
 	margin-left: 7rem;
 }
-.homeBanner_left ul li:last-child {
+.homebanner_left ul li:last-child {
 	/* position: absolute; */
 	color: var(--clr-primary);
 	font-size: 5rem;
 	font-weight: 100;
 }
-.homeBanner_left ul li:last-child::before {
+.homebanner_left ul li:last-child::before {
 	display: inline-block;
 	position: relative;
-	content: "  ";
+	content: " ";
 	background-color: var(--clr-primary);
 	width: 20rem;
 	height: 0.2rem;
 	bottom: 1rem;
 	right: 1rem;
 }
-.homeBanner_left p {
+.homebanner_left p {
 	margin-bottom: 5rem;
 }
-
-.homeBanner_right {
+.homebanner_right {
 	display: flex;
 	gap: 2rem;
 }
-.homeBanner_right img:last-child {
+.homebanner_right img:last-child {
 	position: relative;
 	top: 4rem;
 }
+
 @media screen and (max-width: 520px) {
-	.homeBanner_wrapper {
+	.homebanner_wrapper {
 		flex-direction: column;
 	}
-	.homeBanner_left ul li:last-child::before {
+	.homebanner_left ul li:last-child::before {
 		width: 10rem;
 	}
-	.homeBanner_right {
-		width: 10rem;
+	.homebanner_right {
+		display: none;
 	}
 }
 
@@ -396,6 +396,7 @@ img {
 .cta {
 	padding: 3rem 0;
 	background-color: var(--clr-primary);
+
 	color: var(--clr-semilight);
 }
 .cta_wrapper {
@@ -427,14 +428,129 @@ img {
 }
 .footer ul li a {
 	color: var(--clr-semilight);
+	font-size: 2.5rem;
 }
-/* FOOTER */
+.aboutbanner_left small::before {
+	color: var(--clr-semilight);
+}
+/* FOOTER MOBILE*/
 @media screen and (max-width: 520px) {
 	.footer_wrapper {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
+}
+/* ABOUT PAGE BANNER*/
+.aboutbanner {
+	padding: 3rem 0;
+}
+.aboutbanner_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 5rem;
+}
+/* ABOUT PAGE */
+.aboutbanner {
+	padding: 3rem 0;
+}
+.aboutbanner_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 5rem;
+}
+.aboutbanner_right {
+	max-width: 85rem;
+}
+.aboutbanner_right h1 {
+	font-size: 7rem;
+	font-weight: 700;
+	letter-spacing: 2rem;
+	margin-bottom: 2.5rem;
+}
+.aboutbanner_right p {
+	margin-bottom: 2rem;
+	text-align: justify;
+}
+.aboutbanner_right ul {
+	display: flex;
+	gap: 1rem;
+}
+.aboutbanner_right ul li a {
+	color: var(--clr-dark);
+	font-weight: 700;
+}
+.aboutbanner_left small::before {
+	display: inline-block;
+	position: relative;
+	content: "  ";
+	background-color: var(--clr-dark);
+	height: 0.2rem;
+	width: 35rem;
+	bottom: 0.5rem;
+	right: 1rem;
+}
+.aboutbanner_left small {
+	margin-left: 1rem;
+}
+
+/* LATEST SECTION*/
+
+.latestsection {
+	padding: 3rem 0;
+	background-color: var(--clr-dark);
+}
+.latestsection h5 {
+	color: var(--clr-semilight);
+}
+.latestsection_wrapper {
+	display: grid;
+	grid-template-columns: 42rem 42rem 42rem;
+	justify-content: center;
+}
+.latestsection h1 {
+	color: var(--clr-primary);
+	font-size: 5rem;
+	font-weight: 700;
+}
+
+.latestsection_card {
+	background-color: var(--clr-semilight);
+	max-width: 40rem;
+	margin-top: 2rem;
+}
+.latestsection_card img {
+	width: 40rem;
+}
+.latestsection_card-content {
+	padding: 1rem;
+	font-style: 2rem;
+	text-align: justify;
+}
+.latestsection_card-content h3 {
+	color: var(--clr-secondary);
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 1rem;
+	margin-left: 2rem;
+}
+.latestsection_card-content p {
+	font-weight: 500;
+	margin-top: 1rem;
+	margin-bottom: 4rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.catalogsection p {
+	color: var(--clr-semilight);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.catalogsection h4::before {
+	display: none;
 }
 /* REPEATABLE*/
 .btn {
